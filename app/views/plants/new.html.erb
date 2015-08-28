@@ -1,0 +1,42 @@
+<%= form_for :plant, url: plants_path do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :latin_name %>
+    <%= f.text_field :latin_name %>
+  </p>
+  <p>
+    <%= f.label :min_zone %>
+    <%= f.number_field :min_zone %>
+  </p>
+  <p>
+    <%= f.label :max_zone %>
+    <%= f.number_field :max_zone %>
+  </p>
+  <p>
+    <%= f.label :plant_days_from_last_frost %>
+    <%= f.number_field :plant_days_from_last_frost %>
+  </p>
+  <p>
+    <%= f.label :days_to_first_harvest %>
+    <%= f.number_field :days_to_first_harvest %>
+  </p>
+  <p>
+    <%= f.label :harvest_length %>
+    <%= f.number_field :harvest_length %>
+  </p>
+  <p>
+    <%= f.label :dist_between_plants %>
+    <%= f.number_field :dist_between_plants %>
+  </p>
+  <p>
+    <%= f.label :dist_between_rows %>
+    <%= f.number_field :dist_between_rows %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

@@ -1,0 +1,28 @@
+Hi! I'm the plants page.
+
+<table>
+  <tr>
+    <th>name</th>
+    <th>latin_name</th>
+    <th>min_zone</th>
+    <th>max_zone</th>
+    <th>dist_between_plants</th>
+    <th>dist_between_rows</th>
+    <th>plant_days_from_last_frost</th>
+    <th>days_to_first_harvest</th>
+    <th>harvest_length</th>
+  </tr>
+<% @plants.each do |plant| %>
+  <tr>
+    <td><%= plant.name %></td>
+    <td><%= plant.latin_name %></td>
+    <td><%= plant.min_zone %></td>
+    <td><%= plant.max_zone %></td>
+    <td><%= plant.dist_between_plants %></td>
+    <td><%= plant.dist_between_rows %></td>
+    <td><%= plant.plant_days_from_last_frost %></td>
+    <td><%= plant.days_to_first_harvest %></td>
+    <td><%= plant.harvest_length %></td>
+  </tr>
+<% end %>
+</table>
